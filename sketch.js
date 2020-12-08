@@ -7,7 +7,7 @@ var engine, world;
 var stand,polygon,ground;
 var stand1,stand2;
 var polygon;
-var slingShot;
+var slingshot;
 var polygon_img;
 
 function preload(){
@@ -65,7 +65,7 @@ function draw() {
   ground.display();
   stand1.display();
   stand2.display();
-  slingShot.display();
+  slingshot.display();
   
   strokeWeight(2);
   stroke(15);
@@ -108,6 +108,6 @@ function mouseDragged(){
   Matter.Body.setPosition(this.ball,{x:mouseX,y:mouseY});
 }
 function mouseReleased(){
-  slingShot.fly();
+  slingshot.fly();
 }
 
